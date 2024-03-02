@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+:root {
+    --glass_black: rgba(0, 0, 0, 0.2)
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #333; */
+    color: #fff;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+
+.generator {
+    width: 500px;
+    padding: 32px;
+    border-radius: 8px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+
+.generator__title {
+    color: #fff
+}
+
+.generator__content>* {
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.generator__password {
+    height: 55px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 200;
+
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.generator__button {
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Settings */
+
+.generator__settings {
+    margin-top: 32px;
+    color: #fff
+}
+
+.generator__settings-title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.generator__settings-title_small {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.generator__settings-content {
+    text-align: left;
+    border: 1px solid var(--glass_black);
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.generator__settings-name {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.generator__settings-input {
+    display: inline-block;
+    background-color: var(--glass_black);
+    padding: 8px;
+    width: 40px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-left: 4px;
+    color: #fff;
+    border: none;
+}
+
+.generator__settings-input:focus {
+    outline: none;
+}
+
+.generator__settings-container {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--glass_black);
+}
+
+.generator__settings-container label {
+    font-weight: 300;
+}
